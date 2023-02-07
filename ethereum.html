@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETH Alpha</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Big Brain Alpha</h1>
+        <div id="portfolio">
+            <img src="https://v2.cimg.co/news/102422/252639/responsive-images/ethereum___media_library_original_4000_2666.jpeg" class="nft-image" data-url="https://cryptonews.com/news/it-too-late-buy-ethereum-crypto-experts-give-their-eth-price-predictions-for-2023.htm">
+            <img src="https://i.seadn.io/gcs/files/5a14402f5d39e90345194198bcaca834.png?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/2931">
+            <img src="https://i.seadn.io/gae/EHGOqL4UpxmnvlN6oZoi68uWV6cVi2SpeKydnTcEXKv7qlyHyVNdqtWW8HqZmS394g7pgWFx_qA6HEOhg_ha1f6k90MVQu_3TF4pqQ?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/2087">
+        </div>
+        <script>
+            var images = document.getElementsByClassName("nft-image");
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.cursor = "pointer";
+              images[i].addEventListener("click", function() {
+                var url = this.getAttribute("data-url");
+                window.open(url, "_blank");;
+              });
+            }
+          </script>
+    </div>
+      <div id="navbar"class='navbar-left'>
+        <div id="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="favorites.html">1/1 Art</a>
+            <a href="ethereum.html">Eth News</a>
+          </div>
+        </div>
+      </div>
+</body>
+<footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+    <div id="social-icons2">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</footer>
+</html>

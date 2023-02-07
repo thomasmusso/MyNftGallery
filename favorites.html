@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Favorite Pieces</h1>
+    <div id="portfolio">
+
+        <img src="https://openseauserdata.com/files/5ffd67aac8352e1a22093063236a8146.svg" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/46983056291222864057337618839595855156436881216308289240220407654631410608182">
+        <img src="https://i.seadn.io/gcs/files/5a14402f5d39e90345194198bcaca834.png?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/2931">
+        <img src="https://i.seadn.io/gae/EHGOqL4UpxmnvlN6oZoi68uWV6cVi2SpeKydnTcEXKv7qlyHyVNdqtWW8HqZmS394g7pgWFx_qA6HEOhg_ha1f6k90MVQu_3TF4pqQ?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/2087">
+        <img src="https://i.seadn.io/gae/WHkv2ujNm-3xJdu4ihQl9z6fyViBC4LyPjkZzwbtJtw_qR8hnZcEVZpscC9e3vBOwg_yOkl4UhYswUtBFQPqYdB5JzBIzX5ND7eh?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/98459033616508330838158097482702289995198029499938963320642834158190852046849">
+        <img src="https://i.seadn.io/gcs/files/cc2e277c40446bd2739131b5cd755e6e.gif?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0xc0f799a176e10d45fa56c7298d54f813b51fd151/1578">
+        <img src="https://i.seadn.io/gae/Kv8TP8_ByjVdlkWNur9Bau6HPdOI_2iphisusf9AnE9Kv4zfnS4ou5JZUGda_s5ZLdEiEHLDvh-2kXVZoHggU3mnhfVCCXP4rgRi?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0xb852c6b5892256c264cc2c888ea462189154d8d7/3566">
+        <img src="https://i.seadn.io/gae/xvdxaE-y7zM_-dDMxtB53ZtcN3kT59nZJN2KwzmC3vx3Iy2OOndIMqMvRHkvQZVIfVHja2X-wvqJPFSh1Ired_EJNQD9Fk0FL9hVhno?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7/7400"> 
+        <img src="https://ipfs.io/ipfs/QmX4nfgA35MiW5APoc4P815hMcH8hAt7edi5H3wXkFm485/2D/2326.gif" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x59468516a8259058bad1ca5f8f4bff190d30e066/2326">
+        <img src="https://i.seadn.io/gcs/files/5c34df647abb7578911d151e9e676b76.png?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x19b86299c21505cdf59ce63740b240a9c822b5e4/5480">
+    </div>
+    </div>
+      <script>
+        var images = document.getElementsByClassName("nft-image");
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.cursor = "pointer";
+          images[i].addEventListener("click", function() {
+            var url = this.getAttribute("data-url");
+            window.open(url, "_blank");;
+          });
+        }
+      </script>
+      <div id="navbar"class='navbar-left'>
+        <div id="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="favorites.html">1/1 Art</a>
+            <a href="ethereum.html">Eth News</a>
+          </div>
+        </div>
+      </div>
+</body>
+<footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+    <div id="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</footer>
+</html>

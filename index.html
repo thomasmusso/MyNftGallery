@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css"
+    href="styles.css">
+    <title>From Wallet: Guest1.eth</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="navbar"class='navbar-left'>
+        <div id="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="favorites.html">1/1 Art</a>
+            <a href="ethereum.html">Eth News</a>
+          </div>
+        </div>
+      </div>
+      
+    <div class="container">
+      <h1>My NFT Gallery</h1>
+      <div class="bio">
+        <h2>About My NFT's</h2>
+        <p>I am a collector and creator of unique digital items, also known as Non-Fungible Tokens (NFTs). My NFTs are created using a combination of digital art and blockchain technology, making them one-of-a-kind and verifiable on the blockchain.</p>
+        <p>I specialize in creating vibrant, abstract pieces that explore the intersection of art and technology. My goal is to push the boundaries of what is possible with NFTs and to bring a new level of engagement and interaction to the world of digital art.</p>
+        <p>Explore my portfolio on OpenSea and add one of my NFTs to your collection today!</p>
+      </div>
+      <div id="portfolio">
+        <img src="https://openseauserdata.com/files/e7ec139330ef1ff06430eba9a2ba5884.svg" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/22871525494949908244301269621209367047775675793835572478209749932672125900203">
+        <img src="https://i.seadn.io/gae/-cKj85emDR8tZDYEDaeRW57_htwh7Hmeb0sUE-w76RDbUFUSMpk9lR7gFxorOtAtZQ_0gX6RjXVc9wMp0YN6hdZytp9ryzj-DSc0?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7/7010">
+        <img src="https://i.seadn.io/gcs/files/184f0c30465cc31fcd7f648bb4f05781.png?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x3d0830aa84dae5bb64ea091a943dfbeb0719ec52/1047">
+        <img src="https://i.seadn.io/gae/dFVRtl_RZjWqwzZsLI4e4oxfOMN-lfZj3ohP39w4ir86sOJk3j9x0ToUn4yOZaWR2CVa79mKS_LuD6XexmlvTPzkn_Pa8IZ8bgv0FQ?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/96411404270411630011805465829937472202791055188445154106171930250204508323845">
+        <img src="https://i.seadn.io/gae/cr9BOrCDDDTZod1shHg1FjPshEV1--w4pWdHozIKo7-iyRAPn0c2RZsEH9SMVKpxYznvrfI7bwJFmL2bhJrUlt7kAIJXwEHzoBxS0w?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x982a5a3f6abfd179b3f7649af37942235a90935f/1888">
+        <img src="https://i.seadn.io/gae/X0gob21Py2IzeTKLIX07AN2O2Z23Y8yZSF3eT81atUseNKNbfec5B1QZFRsHa3VAyV0Nz-IPFrzsEA3XC7fTYGxTZYb57jNg6PEeVw?auto=format&w=1000" class="nft-image" data-url="https://opensea.io/assets/ethereum/0x76b3af5f0f9b89ca5a4f9fe6c58421dbe567062d/1356">
+        <!-- Add more images here for each NFT in your OpenSea portfolio -->
+      </div>
+    </div>
+    <script>
+        var images = document.getElementsByClassName("nft-image");
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.cursor = "pointer";
+          images[i].addEventListener("click", function() {
+            var url = this.getAttribute("data-url");
+            window.open(url, "_blank");;
+          });
+        }
+      </script>
+      <body>
+        <button id="vote-btn">Vote</button>
+        <div id="poll-container">
+          <form id="poll-form">
+            <label><input type="radio" name="poll-option" value="2212.eth">2212.eth</label>
+            <label><input type="radio" name="poll-option" value="Boki">Boki</label>
+            <label><input type="radio" name="poll-option" value="illaz">illaz</label>
+            <label><input type="radio" name="poll-option" value="LaserLew">LaserLew</label>
+            <label><input type="radio" name="poll-option" value="DegenKid">DegenKid</label>
+            <label><input type="radio" name="poll-option" value="NOKB">NOKB</label>
+            <input type="submit" value="Submit" style="background-color: transparent; border: none; cursor: pointer;color: #fc0;">
+          </form>
+        </div>
+        <script>
+          var voteBtn = document.getElementById("vote-btn");
+          var pollContainer = document.getElementById("poll-container");
+          var pollForm = document.getElementById("poll-form");
+          
+          voteBtn.addEventListener("click", function() {
+            pollContainer.style.display = "block";
+          });
+          
+          pollForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            var selectedOption = document.querySelector('input[name="poll-option"]:checked');
+            if (selectedOption) {
+              // do something with the selected option, like sending it to a server to be saved
+              alert("You voted for " + selectedOption.value);
+            } else {
+              alert("Please select an option to vote for.");
+            }
+          });
+        </script>
+</body>
+      <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <div id="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        
+    </footer>
+    </body>
+</html>
